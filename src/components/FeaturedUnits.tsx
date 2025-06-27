@@ -6,7 +6,7 @@ export default function FeaturedUnits() {
       price: 65,
       description: "50 sq ft - Perfect for small furniture and seasonal items.",
       location: "400 Bizzell St, College Station, TX",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/Storage-images/5x10-.png",
       isClimateControlled: true,
       availability: "LAST UNIT"
     },
@@ -16,7 +16,7 @@ export default function FeaturedUnits() {
       price: 120,
       description: "100 sq ft - Ideal for a 1-bedroom apartment.",
       location: "400 Bizzell St, College Station, TX",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/Storage-images/10x10-.png",
       isClimateControlled: true,
       availability: "2 UNITS LEFT"
     },
@@ -26,7 +26,7 @@ export default function FeaturedUnits() {
       price: 195,
       description: "200 sq ft - Great for 3-4 bedroom house contents.",
       location: "400 Bizzell St, College Station, TX",
-      image: "https://images.unsplash.com/photo-1600518464441-9154a4dea21b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/Storage-images/10x20-.png",
       isClimateControlled: true,
       availability: "AVAILABLE"
     }
