@@ -23,7 +23,7 @@ export default function Navbar() {
                 alt="Gilbert's Storage Logo" 
                 className="h-16 w-auto object-contain"
                 style={{
-                  clipPath: 'inset(15% 5% 15% 5%)',
+                  clipPath: 'inset(25% 5% 25% 5%)',
                   transform: 'scale(1.2)'
                 }}
               />
