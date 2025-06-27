@@ -38,63 +38,93 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Visit us, call us, or find us on social media. We're here to help with all your storage needs.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Us</h2>
-            <div className="space-y-4">
-              <p className="flex items-center text-gray-600">
-                <svg className="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                400 Bizzell St, College Station, TX 77843
-              </p>
-              <p className="flex items-center text-gray-600">
-                <svg className="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <a href="tel:(555) 123-4567" className="hover:text-primary">
-                  (555) 123-4567
-                </a>
-              </p>
-              <p className="flex items-center text-gray-600">
-                <svg className="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <a href="mailto:info@gilbertsstorage.com" className="hover:text-primary">
-                  info@gilbertsstorage.com
-                </a>
-              </p>
-            </div>
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <svg className="h-6 w-6 text-primary mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Address</h3>
+                  <p className="text-gray-600">400 Bizzell St, College Station, TX 77843</p>
+                </div>
+              </div>
 
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Hours of Operation</h3>
-              <div className="space-y-2">
-                {hours.map((item, index) => (
-                  <div key={index} className="flex justify-between">
-                    <span className="text-gray-600">{item.day}</span>
-                    <span className="font-medium text-gray-900">{item.hours}</span>
-                  </div>
-                ))}
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <svg className="h-6 w-6 text-primary mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
+                  <a href="tel:(555) 123-4567" className="text-gray-600 hover:text-primary">
+                    (555) 123-4567
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <svg className="h-6 w-6 text-primary mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Email</h3>
+                  <a href="mailto:info@gilbertsstorage.com" className="text-gray-600 hover:text-primary">
+                    info@gilbertsstorage.com
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="mt-8 flex space-x-6">
-              {socialLinks.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-400 hover:text-primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Hours of Operation</h3>
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <div className="space-y-3">
+                  {hours.map((item, index) => (
+                    <div key={index} className="flex justify-between items-center">
+                      <span className="text-gray-600 font-medium">{item.day}</span>
+                      <span className="text-gray-900 font-semibold">{item.hours}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-            
-            <div className="mt-8 h-64 rounded-lg overflow-hidden shadow-md">
+
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Follow Us</h3>
+              <div className="flex space-x-6">
+                {socialLinks.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-400 hover:text-primary transition-colors duration-200"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="h-8 w-8" aria-hidden="true" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <div className="h-96 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 title="Gilbert's Storage Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.8!2d-96.3344!3d30.6180!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864683c225c3898d%3A0x4a9a3908e9ad8387!2sTexas%20A%26M%20University!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
@@ -105,71 +135,6 @@ export default function Contact() {
                 loading="lazy"
               />
             </div>
-          </div>
-          
-          <div>
-            <form className="bg-white shadow-md rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-              <div className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                  />
-                </div>
-                <div className="flex items-center">
-                  <input
-                    id="newsletter"
-                    type="checkbox"
-                    className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
-                  />
-                  <label htmlFor="newsletter" className="ml-2 block text-sm text-gray-700">
-                    Sign me up for the newsletter
-                  </label>
-                </div>
-                <button type="submit" className="w-full btn-primary">
-                  Send Message
-                </button>
-              </div>
-              <div className="mt-6 flex items-center justify-center space-x-4">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-norton-antivirus-3521494-2944938.png" alt="Norton Secured" className="h-10 opacity-70" />
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-ssl-security-3521472-2944916.png" alt="SSL Secured" className="h-10 opacity-70" />
-              </div>
-            </form>
           </div>
         </div>
       </div>
