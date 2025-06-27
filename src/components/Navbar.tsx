@@ -15,18 +15,18 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-sm">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex h-28 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/Logo/Dolly.webp" 
+                src="/Logo/Dolly_Logo_Trimmed.png" 
                 alt="Gilbert's Storage Logo" 
-                className="h-24 w-auto object-contain"
+                className="h-12 w-auto object-contain"
                 style={{
-                  clipPath: 'inset(25% 5% 25% 5%)',
-                  transform: 'scale(1.6)'
+                  transform: 'rotate(90deg)'
                 }}
               />
+              <span className="text-xl font-bold text-primary">Gilbert's Storage</span>
             </Link>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-12">
