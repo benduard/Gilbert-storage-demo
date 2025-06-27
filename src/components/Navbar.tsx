@@ -18,11 +18,17 @@ export default function Navbar() {
         <div className="flex h-24 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="/Logo/Dolly copy.png" 
-                alt="Gilbert's Storage Logo" 
-                className="h-20 w-20 object-contain"
-              />
+              <div className="h-20 w-20 overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center">
+                <img 
+                  src="/Logo/Dolly copy.png" 
+                  alt="Gilbert's Storage Logo" 
+                  className="h-24 w-24 object-cover object-center scale-150"
+                  style={{
+                    objectPosition: 'center center',
+                    transform: 'scale(1.8) translate(-5px, -5px)'
+                  }}
+                />
+              </div>
               <span className="text-3xl font-bold text-primary">Gilbert's Storage</span>
             </Link>
           </div>
