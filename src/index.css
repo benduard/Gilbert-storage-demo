@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,5 +25,11 @@ body {
   
   .btn-secondary {
     @apply bg-gray-100 text-primary px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 font-semibold border border-gray-300;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
   }
 }

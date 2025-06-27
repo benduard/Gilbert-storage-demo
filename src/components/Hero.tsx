@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-primary/80" />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+        <h1 className="hero-title text-4xl tracking-tight text-white sm:text-5xl lg:text-6xl">
           Gilbert's Storage
         </h1>
         <p className="mt-6 max-w-xl text-xl text-gray-100">
