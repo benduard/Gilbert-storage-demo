@@ -34,14 +34,14 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-700 hover:text-secondary text-sm font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-secondary text-lg font-semibold transition-colors duration-200"
               >
                 {item.name}
               </Link>
             ))}
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:(555) 123-4567" className="hidden md:block text-secondary font-semibold hover:text-secondary/80 transition-colors duration-200">
+            <a href="tel:(555) 123-4567" className="hidden md:block text-secondary text-lg font-bold hover:text-secondary/80 transition-colors duration-200">
               (555) 123-4567
             </a>
             <button
@@ -51,9 +51,9 @@ export default function Navbar() {
             >
               <span className="sr-only">Open menu</span>
               {mobileMenuOpen ? (
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="h-7 w-7" aria-hidden="true" />
               ) : (
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                <Bars3Icon className="h-7 w-7" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-secondary transition-colors duration-200"
+                  className="block rounded-md px-3 py-2 text-lg font-semibold text-gray-700 hover:bg-gray-50 hover:text-secondary transition-colors duration-200"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
