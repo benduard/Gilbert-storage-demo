@@ -19,12 +19,12 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/Logo/Dolly copy.png" 
+                src="/Logo/Dolly.webp" 
                 alt="Gilbert's Storage Logo" 
                 className="h-24 w-auto object-contain"
                 style={{
-                  clipPath: 'inset(20% 15% 20% 15%)',
-                  transform: 'scale(1.8)'
+                  clipPath: 'inset(25% 5% 25% 5%)',
+                  transform: 'scale(1.6)'
                 }}
               />
             </Link>
