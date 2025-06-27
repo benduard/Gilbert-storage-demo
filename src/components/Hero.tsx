@@ -1,6 +1,13 @@
 export default function Hero() {
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="relative">
+    <div id="hero" className="relative pt-20">
       <div className="absolute inset-0">
         <img
           className="h-full w-full object-cover"
@@ -17,10 +24,16 @@ export default function Hero() {
           Trusted Storage Solutions for Over 15 Years
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-          <button className="btn-primary">
+          <button 
+            onClick={() => scrollToSection('#units')}
+            className="btn-primary"
+          >
             Reserve Storage Units Online
           </button>
-          <button className="btn-secondary bg-white/10 text-white border-white/30 hover:bg-white/20">
+          <button 
+            onClick={() => scrollToSection('#units')}
+            className="btn-secondary bg-white/10 text-white border-white/30 hover:bg-white/20"
+          >
             View Available Units
           </button>
         </div>

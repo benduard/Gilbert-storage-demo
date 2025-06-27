@@ -1,23 +1,33 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Rent Storage', href: '/rent' },
-  { name: 'Contact Us', href: '/contact' },
-  { name: 'FAQ', href: '/faq' },
+  { name: 'Home', href: '#hero' },
+  { name: 'Storage Units', href: '#units' },
+  { name: 'Contact Us', href: '#contact' },
+  { name: 'About', href: '#benefits' },
 ];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileMenuOpen(false);
+  };
+
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white shadow-sm fixed w-full top-0 z-50">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center -ml-8">
-            <Link to="/" className="flex items-center">
+            <button 
+              onClick={() => scrollToSection('#hero')}
+              className="flex items-center"
+            >
               <img 
                 src="/Logo/Dolly_Logo_Trimmed.png" 
                 alt="Gilbert's Storage Logo" 
@@ -26,17 +36,17 @@ export default function Navbar() {
                   transform: 'rotate(90deg)'
                 }}
               />
-            </Link>
+            </button>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-12">
             {navigation.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                to={item.href}
+                onClick={() => scrollToSection(item.href)}
                 className="text-gray-700 hover:text-secondary text-lg font-semibold transition-colors duration-200"
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </div>
           <div className="flex items-center gap-4">
@@ -63,14 +73,13 @@ export default function Navbar() {
           <div className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  to={item.href}
-                  className="block rounded-md px-3 py-2 text-lg font-semibold text-gray-700 hover:bg-gray-50 hover:text-secondary transition-colors duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => scrollToSection(item.href)}
+                  className="block w-full text-left rounded-md px-3 py-2 text-lg font-semibold text-gray-700 hover:bg-gray-50 hover:text-secondary transition-colors duration-200"
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
             </div>
           </div>

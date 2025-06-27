@@ -32,8 +32,15 @@ export default function FeaturedUnits() {
     }
   ];
 
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="units" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-primary text-center mb-12">
           Featured Self Storage Units
@@ -68,7 +75,10 @@ export default function FeaturedUnits() {
                     Climate Controlled
                   </p>
                 )}
-                <button className="w-full btn-primary">
+                <button 
+                  onClick={() => scrollToSection('#contact')}
+                  className="w-full btn-primary"
+                >
                   Reserve Now
                 </button>
               </div>
@@ -76,7 +86,10 @@ export default function FeaturedUnits() {
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="btn-secondary">
+          <button 
+            onClick={() => scrollToSection('#contact')}
+            className="btn-secondary"
+          >
             View All Units
           </button>
         </div>
