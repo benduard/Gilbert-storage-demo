@@ -15,13 +15,13 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-sm">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
                 src="/Logo/Dolly.webp" 
                 alt="Gilbert's Storage Logo" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           </div>
