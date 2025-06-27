@@ -46,14 +46,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-primary">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center space-x-6 md:space-x-12" aria-label="Footer">
           {navigation.main.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-400 hover:text-gray-300"
+              className="text-gray-300 hover:text-secondary transition-colors duration-200"
             >
               {item.name}
             </a>
@@ -64,7 +64,7 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-400 hover:text-gray-300"
+              className="text-gray-400 hover:text-secondary transition-colors duration-200"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -72,7 +72,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-gray-400">
-          &copy; {new Date().getFullYear()} Ruben's Storage. All rights reserved.
+          &copy; {new Date().getFullYear()} Gilbert's Storage. All rights reserved.
         </p>
       </div>
     </footer>

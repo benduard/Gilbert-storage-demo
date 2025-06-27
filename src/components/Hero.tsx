@@ -7,20 +7,20 @@ export default function Hero() {
           src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
           alt="Storage facility"
         />
-        <div className="absolute inset-0 bg-gray-900/70" />
+        <div className="absolute inset-0 bg-primary/80" />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
           Gilbert's Storage
         </h1>
-        <p className="mt-6 max-w-xl text-xl text-gray-300">
+        <p className="mt-6 max-w-xl text-xl text-gray-100">
           Trusted Storage Solutions for Over 15 Years
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <button className="btn-primary">
             Reserve Storage Units Online
           </button>
-          <button className="btn-secondary">
+          <button className="btn-secondary bg-white/10 text-white border-white/30 hover:bg-white/20">
             View Available Units
           </button>
         </div>

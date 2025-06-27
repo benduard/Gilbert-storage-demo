@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#800000', // Maroon
-        'secondary': '#B89352', // New Bronze color
+        'primary': '#475569', // Slate Gray
+        'secondary': '#fb7185', // Coral
       },
     },
   },

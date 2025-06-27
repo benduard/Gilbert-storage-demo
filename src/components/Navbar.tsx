@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="h-8 w-8 bg-primary flex items-center justify-center rounded">
+              <div className="h-8 w-8 bg-secondary flex items-center justify-center rounded">
                 <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
                 </svg>
@@ -31,19 +31,19 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-700 hover:text-primary text-sm font-medium"
+                className="text-gray-700 hover:text-secondary text-sm font-medium transition-colors duration-200"
               >
                 {item.name}
               </Link>
             ))}
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:(555) 123-4567" className="hidden md:block text-primary font-semibold">
+            <a href="tel:(555) 123-4567" className="hidden md:block text-secondary font-semibold hover:text-secondary/80 transition-colors duration-200">
               (555) 123-4567
             </a>
             <button
               type="button"
-              className="md:hidden rounded-md p-2 text-gray-700"
+              className="md:hidden rounded-md p-2 text-gray-700 hover:text-secondary transition-colors duration-200"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Open menu</span>
@@ -64,7 +64,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-secondary transition-colors duration-200"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
