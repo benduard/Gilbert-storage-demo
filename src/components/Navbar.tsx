@@ -21,7 +21,7 @@ export default function Navbar() {
               <img 
                 src="/Logo/Dolly_Logo_Trimmed.png" 
                 alt="Gilbert's Storage Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-16 w-auto object-contain"
                 style={{
                   transform: 'rotate(90deg)'
                 }}
