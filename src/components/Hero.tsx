@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           className="h-full w-full object-cover"
-          src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+          src="/Storage-images/10x10-.png"
           alt="Storage facility"
         />
         <div className="absolute inset-0 bg-primary/80" />
