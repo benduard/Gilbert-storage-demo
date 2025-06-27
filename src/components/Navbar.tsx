@@ -26,7 +26,6 @@ export default function Navbar() {
                   transform: 'rotate(90deg)'
                 }}
               />
-              <span className="text-xl font-bold text-primary">Gilbert's Storage</span>
             </Link>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-12">
