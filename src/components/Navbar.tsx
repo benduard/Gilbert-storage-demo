@@ -16,8 +16,8 @@ export default function Navbar() {
     <header className="bg-white shadow-sm">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-20 items-center justify-between">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-3">
+          <div className="flex items-center -ml-8">
+            <Link to="/" className="flex items-center">
               <img 
                 src="/Logo/Dolly_Logo_Trimmed.png" 
                 alt="Gilbert's Storage Logo" 
