@@ -15,13 +15,13 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-sm">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex h-32 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <img 
                 src="/Logo/Dolly_Logo_Trimmed.png" 
                 alt="Gilbert's Storage Logo" 
-                className="h-28 w-auto object-contain"
+                className="h-16 w-auto object-contain"
                 style={{
                   transform: 'rotate(90deg)'
                 }}
