@@ -17,12 +17,12 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="h-8 w-8 bg-secondary flex items-center justify-center rounded">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-                </svg>
-              </div>
+            <Link to="/" className="flex items-center space-x-3">
+              <img 
+                src="/Logo/Dolly copy.png" 
+                alt="Gilbert's Storage Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <span className="text-xl font-bold text-primary">Gilbert's Storage</span>
             </Link>
           </div>
